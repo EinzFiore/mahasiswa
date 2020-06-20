@@ -46,10 +46,11 @@
                             <h6 class="card-subtitle mb-2 text-muted">
                             <?= $data_m->jk ?></h6>
                             <p><?= $data_m->prodi ?></p>
-                            <a href="#" class="btn btn-secondary" data-toggle="modal"
+                            <a href="#" class="btn btn-secondary btn-sm" data-toggle="modal"
                             data-target="#detail<?= $data_m->nim ?>">Detail</a>
-                            <a href="#" class="btn btn-info" data-toggle="modal"
+                            <a href="#" class="btn btn-info btn-sm" data-toggle="modal"
                             data-target="#editData<?= $data_m->nim ?>">Edit</a>
+                            <a href="<?= base_url('C_data/delete/') . $data_m->nim; ?>" class="btn btn-danger btn-sm">Delete</a>
                         </div>
                     </div>
                 </div>

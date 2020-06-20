@@ -65,6 +65,13 @@ class C_data extends CI_Controller
         $this->db->update('data_mahasiswa',$data);
         redirect('C_data/data_page');
     }
+
+    function delete($nim)
+    {
+        $this->db->where('nim',$nim);
+        $this->db->delete('data_mahasiswa');
+        redirect('C_data/data_page');
+    }
 }
 
 
